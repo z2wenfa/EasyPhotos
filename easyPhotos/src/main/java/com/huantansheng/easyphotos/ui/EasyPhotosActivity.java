@@ -988,8 +988,10 @@ public class EasyPhotosActivity extends AppCompatActivity implements AlbumItemsA
             tvDone.setVisibility(View.VISIBLE);
             tvPreview.setVisibility(View.VISIBLE);
         }
-        tvDone.setText(getString(R.string.selector_action_done_easy_photos, Result.count(),
-                Setting.count));
+//        tvDone.setText(getString(R.string.selector_action_done_easy_photos, Result.count(),
+//                Setting.count));
+
+        tvDone.setText(String.format("完成(%1$d)",Result.count()));
     }
 
     @Override
