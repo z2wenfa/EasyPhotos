@@ -1,7 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.HuanTanSheng'
-
+apply from: 'maven-publish.gradle'
+//apply plugin: 'maven'
 android {
     compileSdkVersion 30
 
@@ -53,3 +54,17 @@ artifacts {
     archives sourcesJar
 //    archives javadocJar
 }
+
+def NEXUS_USERNAME = "admin"
+def NEXUS_PASSWORD = "admin"
+
+def VERSION_NAME = '1.0.0'
+def ARTIFACT_ID = 'eayphotos'
+def GROUP_ID = 'com.z2wenfa'
+
+
+// Maven仓库的URL
+def MAVEN_REPO_RELEASE_URL = "http://z2wenfa.com:8081/repository/maven-releases/"
+
+def MAVEN_REPO_SNAPSHOT_URL = "http://z2wenfa.com:8081/repository/maven-snapshots/"
+
