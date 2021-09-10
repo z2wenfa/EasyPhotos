@@ -10,9 +10,10 @@ def GROUP_ID = 'com.z2wenfa'
 // 是否是release包
 def isRelease = true
 
-// Maven仓库的URL
+// Maven仓库的URL（Release仓库）
 def MAVEN_REPO_RELEASE_URL = 'http://z2wenfa.com:9036/repository/maven-releases/'
 
+// Maven仓库的URL（snapshots仓库）
 def MAVEN_REPO_SNAPSHOT_URL = 'http://z2wenfa.com:9036/repository/maven-snapshots/'
 
 
